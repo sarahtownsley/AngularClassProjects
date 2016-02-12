@@ -1,0 +1,39 @@
+header {
+    background-image: url(https://mlpforums.com/uploads/monthly_05_2015/blogentry-28487-0-83430400-1431282086.png);
+    background-size: cover;
+    height: 400px;
+    border-bottom: 2px solid black;
+}
+
+input {
+    margin-top: 180px;
+    box-shadow: 2px 2px black;
+}
+
+button {
+    margin: 20px;
+    background-color: slateblue;
+    color: white;
+    width: 120px;
+    height: auto;
+}
+
+img {
+    width: 400px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+h1 {
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+}
+
