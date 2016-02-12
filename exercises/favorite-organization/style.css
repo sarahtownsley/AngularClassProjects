@@ -1,0 +1,142 @@
+/*header image*/
+
+.header {
+    background: url("http://www.freebiewebresources.com/wp-content/uploads/2013/10/Black-Labrador-Wallpaper.jpg");
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        background: url("http://www.thefunniestanimalscom.com/medias/images/tumblr-n33g1abbqn1sgosfro3-1280.jpg");
+        height: 450px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.header-one {
+    color: whitesmoke;
+    font-family: 'Passion One', cursive;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .header-one {
+        color: whitesmoke;
+        font-family: 'Passion One', cursive;
+        font-size: 80px;
+        margin-left: 40px;
+    }
+}
+
+.header-two {
+    color: #5F2372;
+    font-family: 'Anton', sans-serif;
+    font-size: 140px;
+    margin-left: 30px;
+    margin-top: -50px;
+    opacity: 0.7;
+    text-shadow: 2px 2px black;
+}
+
+@media screen and (min-width: 800px) {
+    .header-two {
+        color: #5F2372;
+        font-family: 'Anton', sans-serif;
+        font-size: 240px;
+        margin-left: 230px;
+        margin-top: -80px;
+        opacity: 0.7;
+        text-shadow: 2px 2px black;
+    }
+}
+
+.header-three {
+    color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-top: 120px;
+    margin-right: 10px;
+    text-shadow: 1px 1px black;
+    float: right;
+}
+
+@media screen and (min-width: 800px) {
+    .header-three {
+        color: whitesmoke;
+        font-family: 'Dancing Script', cursive;
+        font-size: 80px;
+        margin-right: 40px;
+        margin-top: -60px;
+        text-shadow: 1px 1px black;
+        float: right;
+    }
+}
+
+
+/*navbar*/
+
+.lists {
+    margin-left: 35%;
+    font-size: 15px;
+}
+
+
+/*background*/
+
+body {
+    background: url("http://gitsltd.biz/wp-content/uploads/2014/07/promenadd_grey_background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*home page*/
+
+.name {
+    color: #242424;
+    font-size: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.logo {
+    border: 3px solid #5F2372;
+    height: 400px;
+    width: auto;
+    margin-top: 20px;
+}
+
+
+/*about page*/
+
+.about-header {
+    color: #242424;
+    font-size: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.about {
+    color: black;
+    font-size: 28px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+/*why page*/
+
+.why {
+    color: #242424;
+    font-size: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.images {
+    height: 350px;
+    width: auto;
+    padding: 5px;
+    margin: 13px;
+}
