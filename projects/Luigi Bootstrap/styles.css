@@ -1,0 +1,48 @@
+@font-face {
+    font-family: mario;
+    src: url(SuperMario256.ttf);
+}
+
+.header {
+    background-color: gold;
+    height: 100px;
+}
+
+.luigi-header {
+    color: red;
+    font-family: mario;
+    font-size: 60px;
+    margin-left: 60px;
+}
+
+.row-two {
+    background-color: red;
+    height: 370px;
+}
+
+.luigi {
+    margin-top: 25px;
+}
+
+.about {
+    font-family: mario;
+    color: red;
+    font-size: 40px;
+}
+
+.about-p {
+    color: red;
+    font-size: 25px;
+}
+
+.footer {
+    background-color: gold;
+    height: 70px;
+}
+
+.mushroom {
+    height: 65px;
+    width: auto;
+    float: right;
+    margin-top: 2px;
+}
