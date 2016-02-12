@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand brand-title" href="#"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="navbar-header">
+                    <img class="profile-img" src="http://www.hacanet.org/downloads/facebook/logo/png/FB-f-Logo__white_512.png" alt="" width="30" height="30">
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <input class="form-control search" type="text" placeholder="Search Facebook">
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav right">
+                    <li><img class="sm-photo" src="image4-1.JPG"></li>
+                    <li>
+                        <p class="navbar-p">Sarah Townsley</p>
+                    </li>
+                    <li>
+                        <p class="navbar-p">Home</p>
+                    </li>
+                    <li>
+                        <p class="navbar-p">Find Friends</p>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-user navbar-glyph" aria-hidden="true"></span>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-comment navbar-glyph" aria-hidden="true"></span>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-globe navbar-glyph" aria-hidden="true"></span>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-list navbar-glyph" aria-hidden="true"></span>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-triangle-bottom navbar-glyph" aria-hidden="true"></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 header-image">
+                <h1 class="name">Sarah Colby Townsley</h1>
+                <div class="row">
+                    <div class="col-md-12 profile">
+                       <div class="row">
+                           <div class="col-md-6">
+                               <button type="button" class="btn btn-default btn-sm header-button">Update Info</button>
+                           </div>
+                           <div class="col-md-6">
+                               <button type="button" class="btn btn-default btn-sm header-button">View Activity Log<span class="activity-log" aria-label="15 unread" id="u_jsonp_8_c">10+</span></button>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--        header/name-->
+
+        <div class="row container-fluid">
+            <div class="col-xs-12 header-bar">
+                <div class="col-xs-6 header-glyph">
+                    <span class="glyphicon glyphicon-pencil header-p" aria-hidden="true"> Edit</span>
+                    <span class="glyphicon glyphicon-user header-p" aria-hidden="true"> Friends</span>
+                    <span class="glyphicon glyphicon-camera header-p" aria-hidden="true"> Photos</span>
+                    <span class="glyphicon glyphicon-film header-p" aria-hidden="true"> Videos</span>
+                    <span class="header-p"> More</span>
+                </div>
+            </div>
+        </div>
+
+        <!--        navigation-->
+
+        <div class="row sidebar">
+            <div class="col-sm-2">
+                <div id="sidebar-wrapper">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-envelope"></span> Messages
+                        </div>
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-bookmark"></span> Saved
+                        </div>
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-tag"></span> Sale Groups
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-heart"></span> Close Friends
+                        </div>
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-home"></span> Family
+                        </div>
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-education"></span> University of Utah
+                        </div>
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-list"></span> News Feed
+                        </div>
+                        <div class="col-xs-12">
+                            <span class="glyphicon glyphicon-user"></span> Groups
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--            intro-->
+
+            <div class="col-sm-4 intro">
+                <h2><img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v2/yj/r/k3bYFkrrU2B.png" alt="" width="24" height="24"> Intro
+                <button type="button" class="btn btn-default btn-sm buttons">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit
+                </button>
+                </h2>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-briefcase intro-glyph" aria-hidden="true"></span> Works at TLG Draper
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-home intro-glyph" aria-hidden="true"></span> Lives in Sandy, UT
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-map-marker intro-glyph" aria-hidden="true"></span> From Sandy, UT
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-plus intro-glyph" aria-hidden="true"></span> Add a short bio
+                    </div>
+                </div>
+            </div>
+
+            <!--              status-->
+
+            <div class="col-md-5 status">
+                <span class="glyphicon glyphicon-pencil status-glyph" aria-hidden="true"></span> Status
+                <span class="glyphicon glyphicon-picture status-glyph" aria-hidden="true"></span> Photo/Event
+                <span class="glyphicon glyphicon-calendar status-glyph" aria-hidden="true"></span> Life Event
+                <hr>
+                <input class="form-control" type="text" placeholder="What's on your mind?">
+                <hr>
+                <div class="row">
+                    <span class="glyphicon glyphicon-camera glyph-status" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-user glyph-status" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-map-marker glyph-status" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-time glyph-status" aria-hidden="true"></span>
+                    <button type="button" class="btn btn-default btn-sm post">
+                        <span class="post" aria-hidden="true"></span> Post
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm buttons">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Friends
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--        photos-->
+
+        <div class="row">
+            <div class="col-md-4 photos">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Photos
+                        <button type="button" class="btn btn-default btn-sm buttons">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Photo
+                        </button>
+                        </h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 photo" style="background-image: url(image0ne.jpg)"></div>
+                    <div class="col-xs-4 photo" style="background-image: url(imageTwo.jpg)"></div>
+                    <div class="col-xs-4 photo" style="background-image: url(imageThree.jpg)"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 photo" style="background-image: url(imageFour.jpg)"></div>
+                    <div class="col-xs-4 photo" style="background-image: url(imageFive.jpg)"></div>
+                    <div class="col-xs-4 photo" style="background-image: url(imageSix.jpg)"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 photo" style="background-image: url(imageSeven.jpg)"></div>
+                    <div class="col-xs-4 photo" style="background-image: url(imageEight.jpg)"></div>
+                    <div class="col-xs-4 photo" style="background-image: url(imageNine.jpg)"></div>
+                </div>
+                <hr>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Share
+                </button>
+            </div>
+
+            <!--            timeline-->
+
+            <div class="col-md-7 timeline">
+                <h2>Timeline</h2>
+                <hr>
+
+                <h4><image class="timeline-image" src="image4-1.JPG"></image> Sarah Colby Townsley<p class="date">January 14, 2015 9:38 am</p></h4>
+                <p>Check out this website!</p>
+                <a href="http://www.utahhumane.org" target="_blank">www.utahhumane.org</a>
+                <hr>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Share
+                </button>
+                <hr>
+                <h4><image class="timeline-image" src="imageSix.jpg"></image> MJ Townsley<p class="date">December 12, 2015 1:35 pm</p></h4>
+                <p>Click here to donate: </p>
+                <a href="http://www.savewalterwhite.com/" target="_blank">www.savewalterwhite.com</a>
+                <hr>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Share
+                </button>
+                <hr>
+                <h4><image class="timeline-image" src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/526748_3661426900335_942665987_n.jpg?oh=7349ba8f880b73a9a8441264111190ba&oe=5707E601"></image> Molly Williams<p class="date">December 10, 2015 10:47 am</p></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minus officia voluptas repudiandae quis dolorum quam molestias optio nesciunt, tempora perferendis eos qui ex porro similique possimus illo dolorem inventore!</p>
+                <hr>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Share
+                </button>
+                <hr>
+                <h4><image class="timeline-image" src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xlp1/v/t1.0-9/11214174_456450424542468_2629932970246326798_n.jpg?oh=f2aa572c1dd4d1426aa886eaeda49a03&oe=57022842"></image> Jeff Townsley<p class="date">October 31, 2015 11:12 pm</p></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat minus officia voluptas repudiandae quis dolorum quam molestias optio nesciunt, tempora perferendis eos qui ex porro similique possimus illo dolorem inventore!</p>
+                <hr>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment
+                </button>
+                <button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Share
+                </button>
+            </div>
+
+
+            <!--        friends -->
+
+            <div class="col-md-4 friends">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Friends (150) </h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 photo" style="background-image: url(imageSix.jpg)">
+                        <p class="friend-name">MJ Townsley</p>
+                    </div>
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/526748_3661426900335_942665987_n.jpg?oh=7349ba8f880b73a9a8441264111190ba&oe=5707E601)">
+                        <p class="friend-name">Molly Williams</p>
+                    </div>
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xtp1/v/t1.0-9/11666026_10153323612732420_677849540977095492_n.jpg?oh=9b024172eb34bd739ba960f3dfc90302&oe=56FEDDD5)">
+                        <p class="friend-name">Heather Baird</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xtp1/v/t1.0-9/11229896_10207468063405573_6068673885964720442_n.jpg?oh=384b6779bc5ec13e2b132fc6157b28bb&oe=5749565A)">
+                        <p class="friend-name">Jason Williams</p>
+                    </div>
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xpf1/v/t1.0-9/12348043_10153827086394626_675407186376385834_n.jpg?oh=3f36b9e0c05280c476d688c45084007c&oe=573F76ED)">
+                        <p class="friend-name">Julia Palombo</p>
+                    </div>
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xpl1/v/t1.0-9/1923923_10101887778608577_6705877081121663545_n.jpg?oh=a5505e5a5fc95d2a5d38609282c83b23&oe=573B5706)">
+                        <p class="friend-name">Laura Downs</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xlp1/v/t1.0-9/11214174_456450424542468_2629932970246326798_n.jpg?oh=f2aa572c1dd4d1426aa886eaeda49a03&oe=57022842)">
+                        <p class="friend-name">Jeff Townsley</p>
+                    </div>
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/23390_10152489939065092_2017185657_n.jpg?oh=0e6ec24787f7941c15d7684dbd75f3c2&oe=573C306E)">
+                        <p class="friend-name">Oggy</p>
+                    </div>
+                    <div class="col-xs-4 photo" style="background-image: url(https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xla1/v/t1.0-9/393703_4669111727519_318921968_n.jpg?oh=4c9f6de8ba34bfbfdbe4c8eaad918350&oe=573C680C)">
+                        <p class="friend-name">Maui</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+body {
+    background-color: #f7f7f7;
+}
+
+
+/*navbar*/
+
+.navbar {
+    background-color: #3b5998;
+    height: 28px;
+}
+
+.navbar-header {
+    margin-top: 9px;
+}
+
+.right {
+    float: right;
+}
+
+.sm-photo {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 170px;
+    border: 1px solid black;
+}
+
+.navbar-p {
+    color: white;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+.navbar-glyph {
+    margin-top: 15px;
+    margin-right: 20px;
+    color: #141823;
+}
+
+.search {
+    margin-top: 9px;
+    margin-left: 10px;
+    width: 450px;
+    height: 30px;
+}
+
+.glyphicon-search {
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.buttons {
+    float: right;
+    margin: 3px;
+}
+
+
+/*header and profile picture*/
+
+.header-image {
+    background-image: url(DSC_0322.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.profile {
+    background-image: url(image4-1.JPG);
+    height: 190px;
+    width: 190px;
+    margin-top: -170px;
+    margin-left: 30px;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid white;
+    border-radius: 2px;
+}
+
+.header-bar {
+    height: 60px;
+    border: 1px solid lightgray;
+}
+
+@media screen and (min-width: 900px) {
+    .header-bar {
+        background-color: white;
+        height: 50px;
+        border: 1px solid lightgray;
+    }
+}
+
+.header-glyph {
+    margin-top: 15px;
+    margin-left: 190px;
+}
+
+.header-p {
+    font-size: 10px;
+}
+
+.header-button {
+    float: left;
+}
+
+@media screen and (min-width: 900px) {
+    .header-button {
+        margin-top: 110px;
+        margin-left: 870px;
+    }
+}
+
+.activity-log {
+    background-color: #dc0d17;
+    color: #fff;
+    padding: 1px 3px;
+    margin-left: 2px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+}
+
+@media screen and (min-width: 900px) {
+    .header-p {
+        border-right: 1px solid black;
+        padding-right: 15px;
+        padding-left: 5px;
+        font-size: 15px;
+    }
+}
+
+.name {
+    margin-top: 230px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 220px;
+    color: white;
+}
+
+@media screen and (min-width: 900px) {
+    .name {
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 220px;
+        margin-top: 300px;
+        padding-top: 5px;
+        height: 50px;
+        color: white;
+    }
+}
+
+
+/*sidebar*/
+
+.sidebar {
+    margin-top: 30px;
+}
+
+
+/*intro*/
+
+.intro {
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    height: 194px;
+}
+
+
+/*status*/
+
+.status {
+    background-color: white;
+    border: 1px solid black;
+    width: 535px;
+    margin: 10px;
+}
+
+.status-glyph {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.glyph-status {
+    margin: 5px;
+    margin-left: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.post {
+    float: right;
+    color: white;
+    background-color: #213A7F;
+    margin: 3px;
+}
+
+
+/*photos*/
+
+.photos {
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.photo {
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid white;
+}
+
+
+/*timeline*/
+
+h4 {
+    color: #3b5998;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media screen and (min-width: 900px) {
+    .image-post {
+        height: 500px;
+        width: 700px;
+        border: 1px solid black;
+    }
+}
+
+.timeline-image {
+    height: 35px;
+    width: 35px;
+    border: 1px solid black;
+}
+
+.timeline {
+    background-color: white;
+    border: 1px solid black;
+    width: 730px;
+    margin: 10px;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+    margin-left: 40px;
+    margin-top: -8px;
+}
+
+
+/*friends*/
+
+.friends {
+    background-color: white;
+    border: 1px solid black;
+    margin-left: 10px;
+    height: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+    .friends {
+        margin-top: -850px;
+    }
+}
+
+.friend-name {
+    color: white;
+    margin-top: 90px;
+}
