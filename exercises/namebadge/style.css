@@ -1,0 +1,25 @@
+.border-group {
+    border-style: solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.black {
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+label {
+    padding: 20px;
+}

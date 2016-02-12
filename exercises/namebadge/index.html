@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nameBadgeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cerulean/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Name Badge</title>
+</head>
+
+<body ng-controller="MainController">
+    <div class="border-group">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-6 control-group">
+                    <input class="form-control" type="text" ng-model="firstName" placeholder="First Name">
+                </div>
+
+                <div class="col-xs-6 control-group">
+                    <input class="form-control" type="text" ng-model="lastName" placeholder="Last Name">
+                </div>
+
+                <div class="col-xs-6 control-group">
+                    <input class="form-control" type="text" ng-model="email" placeholder="Email">
+                </div>
+
+                <div class="col-xs-6 control-group">
+                    <input class="form-control" type="text" ng-model="birthPlace" placeholder="Place of Birth">
+                </div>
+
+                <div class="col-xs-6 control-group">
+                    <input class="form-control" type="text" ng-model="phone" placeholder="Phone">
+                </div>
+
+                <div class="col-xs-6 control-group">
+                    <input class="form-control" type="text" ng-model="food" placeholder="Favorite Food">
+                </div>
+                <div class="col-xs-12">
+                    <textarea class="form-control" type="text" ng-model="tellUs" placeholder="Tell us about yourself"></textarea>
+                </div>
+
+            </div>
+            <button class="center-block btn btn-primary" ng-click="submit(newThing)">Submit</button>
+        </div>
+
+
+    </div>
+    <div ng-repeat="item in nameBadges track by $index" class="border-group">
+        <div class="row center-block">
+            <div class="col-xs-12 black text-center">Name Badge</div>
+            <div class="row center-block">
+                <div class="col-xs-6">
+                    <label>First Name:</label> {{ item.firstName }}
+                </div>
+                <div class="col-xs-6">
+                    <label>Last Name:</label> {{ item.lastName }}
+                </div>
+
+                <div class="row center-block">
+                    <div class="col-xs-6">
+                        <label>Email:</label> {{ item.email }}
+                    </div>
+
+                    <div class="col-xs-6">
+                        <label>Place of Birth:</label> {{ item.birthPlace }}
+                    </div>
+                </div>
+
+                <div class="row center-block">
+                    <div class="col-xs-6">
+                        <label>Phone Number:</label> {{ item.phone }}
+                    </div>
+
+                    <div class="col-xs-6">
+                        <label>Favorite Food:</label> {{ item.food }}
+                    </div>
+                </div>
+                <div class="row center-block">
+                    <div class="col-xs-12">
+                        <label>Tell Us About Yourself:</label> {{ item.tellUs }}
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
