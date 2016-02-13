@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDoApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainController">
+    <header>
+        <p class="line-one">"I JUST GET THINGS DONE</p>
+        <p class="line-two">INSTEAD OF TALKING ABOUT GETTING THEM DONE"</p>
+        <p class="name"> - Henry Rollins</p>
+    </header>
+    <div class="container-fluid">
+       <h1 class="to-do">MY TO-DO LIST:</h1>
+       <hr>
+        <div class="row">
+            <div class="col-md-9 ">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <h5>Delete</h5>
+                    </div>
+                    <div class="col-sm-1">
+                        <h5>Title</h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Description</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Price</h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Image</h5>
+                    </div>
+                    <div class="col-sm-1">
+                        <h5>Completed</h5>
+                    </div>
+                </div>
+
+                <div class="row" ng-repeat="item in myToDos track by $index">
+                    <hr>
+                    <div class="col-sm-1 item">
+                        <button class="btn btn-danger" ng-click="deleteToDo($index)">x</button>
+                    </div>
+                    <div class="col-sm-1 item">
+                        <div ng-class="{strike: item.completed}">
+                            {{item.title}}
+                        </div>
+                    </div>
+                    <div class="col-sm-3 item" ng-class="{strike: item.completed}">
+                        {{item.description}}
+                    </div>
+                    <div class="col-sm-2 item" ng-class="{strike: item.completed}">
+                        ${{item.price}}
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="img-responsive" ng-src="{{item.imgUrl}}">
+                    </div>
+                    <div class="col-sm-1">
+                        <input type="checkbox" ng-model="item.completed" ng-click="updateToDo($index)">
+                    </div>
+                    <div class="col-sm-1 edit">
+                        <button class="btn btn-info">Edit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Add To Do</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Title</label>
+                        <input type="text" class="form-control" ng-model="newToDo.title" placeholder="Add title">
+
+                        <label>Description</label>
+                        <input type="text" class="form-control" ng-model="newToDo.description" placeholder="Add description">
+
+                        <label>Price</label>
+                        <input type="text" class="form-control" ng-model="newToDo.price" placeholder="Add price">
+
+                        <label>Image</label>
+                        <input type="text" class="form-control" ng-model="newToDo.imgUrl" placeholder="Image URL">
+
+                        <label>Completed</label>
+                        <input type="checkbox" ng-model="newToDo.completed">
+
+                        <div class="panel-footer">
+                            <button class="btn btn-success center-block" ng-click="addToDo()">Add To Do</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

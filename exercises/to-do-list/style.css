@@ -1,0 +1,74 @@
+header {
+    background: url(http://www.freewebheaders.com/wordpress/wp-content/gallery/beautiful-landscape/mountain-lake-purple-sunset-landscape-website-header.jpg);
+    height: 290px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+}
+
+.line-one {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+}
+
+@media screen and (min-width: 800px) {
+    .line-one {
+        color: white;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+        text-shadow: 2px 2px black;
+    }
+}
+
+.line-two {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    float: right;
+    margin-top: 60px;
+}
+
+@media screen and (min-width: 800px) {
+    .line-two {
+        color: white;
+        font-family: 'Anton', sans-serif;
+        font-size: 60px;
+        text-shadow: 2px 2px black;
+        float: right;
+        margin-top: 60px;
+    }
+}
+
+.name {
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left: 90px;
+}
+
+h1 {
+    color: black;
+    font-size: 20px;
+}
+
+h5 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.item {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
