@@ -1,0 +1,49 @@
+@font-face {
+    font-family: battle;
+    src: url(BATTLEST.TTF);
+}
+
+.header {
+    background: url(http://www.samacofilms.com/wp-content/uploads/2014/04/film-slate.jpg);
+    height: 300px;
+    background-size: cover;
+    border: 5px solid goldenrod;
+}
+
+.app-title {
+    color: goldenrod;
+    margin-top: 120px;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    font-family: battle;
+}
+
+body {
+    background: url(http://www.publicdomainpictures.net/pictures/30000/nahled/film-background-1334067869u9d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-warning {
+    color: black;
+    border: 1px solid black;
+}
+
+.movie-title {
+    color: whitesmoke;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 45px;
+    text-shadow: 1px 1px black;
+}
+
+.other-info {
+    color: dimgray;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    text-shadow: 1px 1px black;
+}
