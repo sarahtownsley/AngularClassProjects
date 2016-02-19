@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeProfile">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poke Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="PokeController">
+    <h1 class="text-center">Enter Pokemon Number:</h1>
+    <div class="container">
+        <div class="row center-block">
+            <input ng-model="userInput" class="center-block" placeholder="Enter Number">
+            <div>
+                <button class="center-block" ng-click="submit(userInput)">Get Pokemon</button>
+            </div>
+        </div>
+    </div>
+
+    <div ng-repeat="i in pokemon">
+        <h2 class="text-center">Name: {{ i.name }}</h2>
+        <h3 class="text-center">Attack: {{ i.attack }}</h3>
+        <h3 ng-repeat="x in i.abilities" class="text-center">Ability: {{ x.name }}</h3>
+        <img class="center-block pokemon" ng-src="{{image}}"
+        
+        
+    </div>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="poke.js"></script>
+        <script src="poke-service.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,38 @@
+body {
+    background: url("http://imagesci.com/img/2013/05/sleeping-pikachu-wallpaper-5737-hd-wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h2 {
+    
+    font-family: 'Shadows Into Light', cursive;
+    
+}
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+input {
+    margin: 10px;
+}
+
+button {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.pokemon {
+    width: 150px;
+    height: 150px;
+    
+}
