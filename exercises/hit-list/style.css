@@ -1,0 +1,67 @@
+/*header*/
+
+.header-image {
+    background: url(http://www.omnix.tv/wp-content/uploads/2015/11/don_corleone_vito_the_godfather_mafia_hd-wallpaper-1459487-1080x400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 330px;
+    border: 2px solid #40040C;
+    opacity: 0.9;
+}
+
+.header {
+    color: darkred;
+    background-color: black;
+    height: 80px;
+}
+
+h1 {
+    font-size: 100px;
+    color: #212121;
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 1px 1px #ff0000;
+    
+}
+
+p {
+    font-family: cursive;
+    font-size: 26px;
+    float: right;
+    color: #40040C;
+    text-shadow: 1px 1px #570610;
+    margin-top: 150px;
+    
+}
+
+/*body*/
+
+body {
+    background-color: #1F1F1F;
+}
+
+
+h2 {
+    opacity: 0.7;
+    color: white;
+    font-size: 19px;
+    background-color: #40040C;
+    position: relative;
+    width: 200px;
+    right: 15px;
+    top: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.main {
+    height: 300px;
+    width: 200px;
+    background-size: 200px 300px;
+    margin-top: 30px;
+    margin-left: 60px;
+    border: 2px solid #40040C;
+}
+
+
+

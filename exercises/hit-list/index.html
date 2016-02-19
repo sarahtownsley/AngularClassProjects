@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="HitList">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hit List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="ListController">
+    <header class="header-image">
+        <h1 class="text-center">Don Corleone's Hit List</h1>
+        <p>Never tell anyone outside the family what you are thinking.</p>
+    </header>
+    <div class="container">
+        <div class="row col-md-12 scrollbox2">
+            <div ng-repeat="person in hitList" class="main col-xs-4 text-center" ng-style="{'background-image':'url({{ person.image }})'}">
+                <h2>{{ person.name }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</body>
+
+</html>
