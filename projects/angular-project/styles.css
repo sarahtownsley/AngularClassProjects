@@ -1,0 +1,232 @@
+/*navbar*/
+
+.navbar-custom {
+    background-color: #262626;
+}
+
+.navbar-custom a {
+    color: lightgray;
+}
+
+.icon-bar {
+    background-color: #999999;
+}
+
+li {
+    font-family: 'Loved by the King', cursive;
+    font-size: 25px;
+}
+
+.top-quote {
+    font-family: 'Sacramento', cursive;
+    font-size: 35px;
+}
+
+
+/*why adopt*/
+
+.adopt-title {
+    font-family: 'Amatic SC', cursive;
+    color: #462F8A;
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.why-adopt {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
+
+.adoption {
+    font-family: 'Loved by the King', cursive;
+    color: black;
+    font-size: 30px;
+}
+
+.adoption-two {
+    font-family: 'Loved by the King', cursive;
+    color: #462F8A;
+    font-size: 30px;
+}
+
+b {
+    font-size: 40px;
+}
+
+.cat-photo {
+    width: 365px;
+    height: auto;
+    border: 1px solid black;
+}
+
+
+/*search page*/
+
+.find-pet {
+    font-family: 'Amatic SC', cursive;
+    color: #462F8A;
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.btn.btn-info.submit {
+    background-color: darkslateblue;
+}
+
+.animal-info {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.photo {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border: 3px groove darkslateblue;
+}
+
+.name {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: #F27112;
+}
+
+.info {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+}
+
+.click {
+    font-size: 15px;
+}
+
+
+
+/*dog facts*/
+
+body,
+html,
+main {
+    /* important */
+    height: 500px;
+}
+
+.cd-fixed-bg {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+    background-image: url("http://www.hd-wallpapersdownload.com/upload/bulk-upload/desktop-pictures-of-dogs-in-black-and-white-wallpaper.jpg");
+}
+
+.cd-fixed-bg.cd-bg-2 {
+    background-image: url(http://www.thequotesland.com/wp-content/uploads/2016/02/Black-and-White-Dog-Wallpaper-5.jpg);
+}
+
+.cd-fixed-bg.cd-bg-3 {
+    background-image: url("DSC_0322.jpg");
+}
+
+.cd-fixed-bg.cd-bg-4 {
+    background-image: url("http://www.dogwallpapers.net/wallpapers/black-and-white-american-eskimo-dog-wallpaper.jpg");
+}
+
+.cd-fixed-bg.cd-bg-5 {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/68/5b/b7/685bb766f852a8cc3d6d50c8aab1f213.jpg");
+}
+
+.cd-fixed-bg.cd-bg-6 {
+    background-image: url("http://www.poochdoggie.com/dog-photo-ct/wp-content/uploads/2009/08/img_1564-enfused-800-BW.jpg");
+}
+
+.cd-fixed-bg.cd-bg-7 {
+    background-image: url("http://homepages.wmich.edu/~shm8629/dog/images/happy%20dog.jpg");
+}
+
+.cd-fixed-bg.cd-bg-8 {
+    background-image: url("http://www.erinvey.com/bark/wp-content/uploads/2008/03/_mg_6935edited.jpg");
+}
+
+.cd-fixed-bg.cd-bg-9 {
+    background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/inline-large/inline/2014/03/3028174-inline-s-27-get-down-on-your-knees-or-stomach-and-other-tips-on-dog-photography-from-an-expert.jpg");
+}
+
+.cd-fixed-bg.cd-bg-10 {
+    background-image: url("http://www.hdwallpapersnew.net/wp-content/uploads/2015/06/beautiful-black-dog-full-screen-wallpaper-photos-hd-desktop-background-free.jpg");
+}
+
+.cd-fixed-bg.cd-bg-11 {
+    background-image: url("http://www.iwallhd.com/stock/black-dogs-fresh-new-hd-wallpaper.jpg");
+}
+
+.cd-fixed-bg.cd-bg-12 {
+    background-image: url("http://www.boredpal.com/post_images/2015/June/1613-55803c599a875.jpg");
+}
+
+.cd-fixed-bg.cd-bg-13 {
+    background-image: url("http://imgmax.com/photos/20121012135000304120719.jpg");
+}
+
+.cd-fixed-bg.cd-bg-14 {
+    background-image: url("http://www.prowallpapers.ro/download/black_and_white_dog_2-1920x1080.jpg");
+}
+
+.cd-fixed-bg.cd-bg-15 {
+    background-image: url("http://static.tumblr.com/94d59537d657f4b792376ae6f22e10f4/ilyjn0u/OUjndnjxd/tumblr_static_ry7rwsprg2s0sksk8w8sg4s0.jpg");
+}
+
+.facts-title {
+    font-family: 'Amatic SC', cursive;
+    color: #462F8A;
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.facts-title-two {
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    font-size: 40px;
+}
+
+.fact {
+    font-family: 'Loved by the King', cursive;
+    color: white;
+    font-size: 40px;
+    background: #34123B;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(#a9db80, 0), color-stop(#96c56f, 1));
+    background: -webkit-linear-gradient(top, #34123B 0%, #5D157D 100%);
+    background: -moz-linear-gradient(top, #34123B 0%, #5D157D 100%);
+    background: -o-linear-gradient(top, #34123B 0%, #5D157D 100%);
+    background: linear-gradient(top, #34123B 0%, #5D157D 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#34123B', endColorstr='#7B2A8C', GradientType=0);
+    padding-left: 90px;
+    padding-right: 105px;
+    min-height: 50px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #34123B;
+}
+
+p {
+    margin: 0px;
+}
+
+
+/*resources page*/
+
+.learn-more {
+    font-family: 'Amatic SC', cursive;
+    color: #462F8A;
+    font-size: 55px;
+    margin-top: 10px;
+}
+
+.learn-more-two {
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    font-size: 40px;
+}

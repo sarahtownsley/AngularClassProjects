@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <header class="text-center top-quote">"Saving just one dog won't change the world...but surely it will change the world...for that one dog"</header>
+        <h1 class="text-center find-pet">Find A Pet To Adopt</h1>
+    </div>
+    <hr>
+    <div class="col-md-5 input">
+        <select class="form-control" default="dog" ng-model="animal">
+            <option value="">Select One</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+        </select>
+    </div>
+    <div class="col-md-5 location">
+        <input class="center-block form-control" type="text" ng-model="location" placeholder="Enter your zip code or City, State" default="utah">
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-info submit" ng-click="submitPet()">SUBMIT</button>
+    </div>
+    <hr>
+    <div class="row">
+        <div ng-repeat="pet in petList">
+            <div class="col-md-3 animal-info">
+                <a href="{{pet.media.photos.photo[2].$t}}" rel="lightbox" data-lightbox="projects">
+                    <img class="center-block photo" ng-src="{{pet.media.photos.photo[2].$t}}">
+                    <p class="text-center click">Click image-enlarge</p>
+                </a>
+                <h1 class="text-center name">Name: {{pet.name.$t}}</h1>
+                <hr>
+                <p class="text-center info">ID: {{pet.id.$t}}</p>
+                <p class="text-center info">Age: {{pet.age.$t}}</p>
+                <p class="text-center info">Sex: {{pet.sex.$t}}</p>
+                <p class="text-center info">Breed: {{pet.breeds.breed.$t}}</p>
+                <p class="text-center info"><i>Contact this shelter:</i>
+                    <br>{{pet.contact.email.$t}}
+                    <br>{{pet.contact.phone.$t}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
