@@ -161,7 +161,7 @@
             .portfolio-title {
                 font-family: 'Amatic SC', cursive;
                 font-size: 60px;
-                padding-top: 50px;
+                padding-top: 40px;
                 color: black;
             }
             
@@ -195,7 +195,7 @@
             @media screen and (min-width: 780px) {
                 .image {
                     padding-top: 40px;
-                    padding-bottom: 100px;
+                    padding-bottom: 110px;
                 }
             }
             
@@ -245,6 +245,14 @@
                     opacity: .80;
                     z-index: 1;
                 }
+            }
+            
+            .click {
+                color: #000;
+                font-size: 30px;
+                font-family: 'Amatic SC', cursive;
+                background-color: white;
+                opacity: .50;
             }
             /*pricing section*/
             
@@ -387,5 +395,30 @@
                 font-family: 'Amatic SC', cursive;
                 font-size: 50px;
                 color: black;
-                margin-top: 40px;
+                padding-top: 40px;
+            }
+            
+            .gallery-image {
+                height: 130px;
+                width: auto;
+                margin-bottom: 10px;
+            }
+            
+            .gallery-image-portrait {
+                width: 150px;
+                height: auto;
+            }
+            
+            .h1,
+            .h2,
+            .h3,
+            h1,
+            h2,
+            h3 {
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+            
+            .btn-danger {
+                margin: 10px;
             }

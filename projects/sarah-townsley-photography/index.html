@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Sarah Townsley Photography | Utah Photography</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!--    <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">-->
+    <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
@@ -79,7 +79,7 @@
     <section>
         <div id="portfolio" class="portfolio">
             <h1 class="text-center portfolio-title">PORTFOLIO</h1>
-            <hr>
+            <p class="text-center click">Double click a category to open</p>
             <div class="row">
                 <div class="col-md-3 image">
                     <a id="family-photos" href="#family-gallery" ng-click="scrollToFamilyGallery()">
@@ -111,36 +111,164 @@
 
         <!--      PHOTOS-->
 
-<!--family-->
+        <!--family-->
         <div id="family-gallery">
             <h1 class="text-center gallery-title">Utah Family Photography</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae explicabo asperiores nihil optio voluptates dicta sed totam numquam necessitatibus eius eum, inventore corporis, minima accusantium perferendis molestias tenetur temporibus laudantium!</p>
-            <button id="hide-family">Close</button>
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-one.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-one.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-two.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-two.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-three.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-three.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-four.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-four.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-five.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-five.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-six.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-six.jpg"></image>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-seven.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-seven.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-eight.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-eight.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-nine.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-nine.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-ten.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-ten.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-eleven.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-eleven.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/family/utah-family-twelve.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/family/utah-family-twelve.jpg"></image>
+                    </a>
+                </div>
+            </div>
+            <button id="hide-family" class="btn btn-danger">Close</button>
         </div>
-<!--        kid-->
+
+
+        <!--        kid-->
         <div id="kid-gallery">
             <h1 class="text-center gallery-title">Utah Kids Photography</h1>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae explicabo asperiores nihil optio voluptates dicta sed totam numquam necessitatibus eius eum, inventore corporis, minima accusantium perferendis molestias tenetur temporibus laudantium!</p>
-            <button id="hide-kid">Close</button>
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-one.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/kids/utah-kids-one.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-two.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/kids/utah-kids-two.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-three.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/kids/utah-kids-three.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-four.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/kids/utah-kids-four.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-five.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/kids/utah-kids-five.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-six.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image" src="images/kids/utah-kids-six.jpg"></image>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-seven.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image-portrait" src="images/kids/utah-kids-seven.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-eight.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image-portrait" src="images/kids/utah-kids-eight.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-nine.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image-portrait" src="images/kids/utah-kids-nine.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-ten.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image-portrait" src="images/kids/utah-kids-ten.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-eleven.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image-portrait" src="images/kids/utah-kids-eleven.jpg"></image>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="images/kids/utah-kids-twelve.jpg" rel="lightbox" data-lightbox="projects">
+                        <image class="image-responsive center-block gallery-image-portrait" src="images/kids/utah-kids-twelve.jpg"></image>
+                    </a>
+                </div>
+            </div>
+            <button id="hide-kid" class="btn btn-danger">Close</button>
         </div>
-<!--        pet-->
+        <!--        pet-->
         <div id="pet-gallery">
             <h1 class="text-center gallery-title">Utah Pet Photography</h1>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae explicabo asperiores nihil optio voluptates dicta sed totam numquam necessitatibus eius eum, inventore corporis, minima accusantium perferendis molestias tenetur temporibus laudantium!</p>
             <button id="hide-pet">Close</button>
         </div>
-<!--        nature-->
+        <!--        nature-->
         <div id="nature-gallery">
             <h1 class="text-center gallery-title">Utah Nature Photography</h1>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae explicabo asperiores nihil optio voluptates dicta sed totam numquam necessitatibus eius eum, inventore corporis, minima accusantium perferendis molestias tenetur temporibus laudantium!</p>
             <button id="hide-nature">Close</button>
         </div>
-        
-        
+
+
     </section>
 
     <!--    pricing section-->
@@ -250,7 +378,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
-    <!--    <script src="node_modules/lightbox2/dist/js/lightbox.js "></script>-->
+    <script src="node_modules/lightbox2/dist/js/lightbox.js "></script>
     <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js "></script>
