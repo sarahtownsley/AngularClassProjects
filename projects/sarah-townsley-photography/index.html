@@ -30,11 +30,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav lists">
-                    <li><a href="#home" ng-click="scrollToHomeSection()">Home</a></li>
-                    <li><a href="#about" ng-click="scrollToAboutSection()">About</a></li>
-                    <li><a href="#portfolio" ng-click="scrollToPortfolioSection()">Portfolio</a></li>
-                    <li><a href="#pricing" ng-click="scrollToPricingSection()">Pricing</a></li>
-                    <li><a href="#contact" ng-click="scrollToContactSection()">Contact</a></li>
+                    <li><a href="#home" ng-click="scrollToSection('#home')">Home</a></li>
+                    <li><a href="#about" ng-click="scrollToSection('#about')">About</a></li>
+                    <li><a href="#portfolio" ng-click="scrollToSection('#portfolio')">Portfolio</a></li>
+                    <li><a href="#pricing" ng-click="scrollToSection('#pricing')">Pricing</a></li>
+                    <li><a href="#contact" ng-click="scrollToSection('#contact')">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -82,25 +82,25 @@
             <p class="text-center click">Double click a category to open</p>
             <div class="row">
                 <div class="col-md-3 image">
-                    <a id="family-photos" href="#family-gallery" ng-click="scrollToFamilyGallery()">
+                    <a id="family-photos" href="#family-gallery" ng-click="scrollToGallery('#hide-family', '#family-photos', '#family-gallery')">
                         <img class="portfolio-category-image" src="images/family/family-photography-utah.jpg" alt="Utah Family Photography">
                         <h2 class="category-name">FAMILY</h2>
                     </a>
                 </div>
                 <div class="col-md-3 image">
-                    <a id="kid-photos" href="#kid-gallery" ng-click="scrollToKidGallery()">
+                    <a id="kid-photos" href="#kid-gallery" ng-click="scrollToGallery('#hide-kid', '#kid-photos' , '#kid-gallery')">
                         <img class="portfolio-category-image" src="images/kids/utah-newborn-kids-photography.jpg" alt="Utah Kids Photography">
                         <h2 class="category-name">KIDS</h2>
                     </a>
                 </div>
                 <div class="col-md-3 image">
-                    <a id="pet-photos" href="#pet-gallery" ng-click="scrollToPetGallery()">
+                    <a id="pet-photos" href="#pet-gallery" ng-click="scrollToGallery('#hide-pet', '#pet-photos', '#pet-gallery')">
                         <img class="portfolio-category-image" src="images/pets/utah-dog-photography.jpg" alt="Utah Pet Photography">
                         <h2 class="category-name">PETS</h2>
                     </a>
                 </div>
                 <div class="col-md-3 image">
-                    <a id="nature-photos" href="#nature-gallery" ng-click="scrollToNatureGallery()">
+                    <a id="nature-photos" href="#nature-gallery" ng-click="scrollToGallery('#hide-nature', '#nature-photos', '#nature-gallery')">
                         <img class="portfolio-category-image" src="images/flowers-nature/utah-nature-photography.jpg" alt="Utah Nature Photography">
                         <h2 class="category-name">NATURE</h2>
                     </a>
@@ -423,7 +423,7 @@
                     </a>
                 </div>
             </div>
-            <button id="hide-nature" class="btn btn-danger">Close</button>
+            <button id="hide-nature" class="btn btn-danger ">Close</button>
         </div>
 
 
