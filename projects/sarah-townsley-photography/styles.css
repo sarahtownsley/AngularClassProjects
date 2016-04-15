@@ -11,7 +11,17 @@
             .navbar-brand {
                 float: left;
                 margin-top: -40px;
-                font-size: 30px;
+                font-size: 25px;
+            }
+            
+            @media screen and (min-width: 480px) {
+                .container {
+                    width: 800px;
+                }
+            }
+            
+            .container {
+                width: 100%;
             }
             
             @media screen and (min-width: 480px) {
@@ -32,8 +42,8 @@
             }
             
             li a {
-                margin-left: 20px;
-                margin-right: 20px;
+                margin-left: 15px;
+                margin-right: 15px;
                 color: #FFB6A5;
             }
             
@@ -171,8 +181,6 @@
                 margin-right: auto;
                 height: 180px;
                 width: auto;
-                border-radius: 50%;
-                box-shadow: 5px 5px 2px #FFB6A5;
             }
             
             @media screen and (min-width: 480px) {
@@ -182,8 +190,6 @@
                     margin-right: auto;
                     height: 280px;
                     width: auto;
-                    border-radius: 50%;
-                    box-shadow: 5px 5px 2px #FFB6A5;
                 }
             }
             
@@ -365,8 +371,9 @@
             
             footer {
                 background-color: #FFB6A5;
-                height: 45px;
+                height: 52px;
                 width: 100%;
+                padding-top: 6px;
                 background-position: center;
                 background-size: cover;
                 color: white;
