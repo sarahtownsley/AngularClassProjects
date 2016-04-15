@@ -1,0 +1,410 @@
+    body {
+        padding-top: 50px;
+    }
+    
+    .navbar-custom {
+        background-color: #262626;
+    }
+    
+    .navbar-custom a {
+        color: dimgray;
+    }
+    
+    .icon-bar {
+        background-color: #999999;
+    }
+    /*about page*/
+    
+    .about-header {
+        background-image: url(Templates/Pictures/DSC_0147-2.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 600px;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 3px 3px black;
+    }
+    
+    .myphoto {
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .photo {
+        height: 200px;
+        width: auto;
+        border: 1px solid black;
+        border-radius: 30px
+    }
+    
+    .social {
+        height: 50px;
+        width: 50px;
+        margin-top: 180px;
+    }
+    
+    .aboutscroll {
+        font-size: 5em;
+        margin-top: 40px;
+        color: whitesmoke;
+        text-shadow: 1px 1px black;
+    }
+    
+    .header-h1 {
+        position: relative;
+        top: 35%;
+        transform: translateY(-50%);
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 100px;
+    }
+    
+    .header-h2 {
+        position: relative;
+        top: 25%;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 40px;
+    }
+    
+    .resume {
+        font-family: 'Fjalla One', sans-serif;
+        color: #5277A6;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-decoration: underline;
+    }
+    
+    .about {
+        margin-top: 50px;
+        font-size: 25px;
+        font-family: 'Shadows Into Light', cursive;
+    }
+    
+    img {
+        height: 120px;
+        width: auto;
+    }
+    
+    .skills {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 30px;
+        margin-top: -20px;
+    }
+    
+    .logo {
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    
+    .logo img {
+        height: 80px;
+        width: auto;
+    }
+    /*projects page*/
+    
+    .header-projects {
+        position: relative;
+        top: 35%;
+        transform: translateY(-50%);
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 100px;
+    }
+    
+    .project-header {
+        background-image: url(Templates/Pictures/flower2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 325px;
+        text-align: center;
+        color: whitesmoke;
+        opacity: 0.3%;
+        text-shadow: 3px 3px black;
+    }
+    
+    .project-header .projectscroll {
+        font-size: 5em;
+        margin-top: 50px;
+        color: whitesmoke;
+    }
+    
+    .image-responsive {
+        margin-top: 30px;
+        border: 1px solid black;
+    }
+    
+    .project-title {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 25px;
+        color: white;
+        text-decoration: underline;
+    }
+    
+    a:hover h2 {
+        color: grey;
+        background-color: transparent;
+    }
+    /*project arrows and directions*/
+    
+    .click-image {
+        font-family: 'Shadows Into Light', cursive;
+        color: black;
+        font-size: 25px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .click-image {
+            font-family: 'Shadows Into Light', cursive;
+            color: black;
+            float: left;
+            font-size: 25px;
+            position: absolute;
+            margin-top: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .image-arrow-r {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .image-arrow-r {
+            height: 80px;
+            width: auto;
+            float: left;
+            margin-left: -45px;
+            margin-top: 30px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+        }
+    }
+    
+    .click-title {
+        font-family: 'Shadows Into Light', cursive;
+        color: black;
+        font-size: 25px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .click-title {
+            font-family: 'Shadows Into Light', cursive;
+            color: black;
+            float: left;
+            position: inherit;
+            margin-left: -140px;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+    }
+    
+    @media screen and (max-width: 1200px) {
+        .image-arrow-l {
+            display: none;
+        }
+    }
+    
+    @media screen and (min-width: 1100px) {
+        .image-arrow-l {
+            height: 220px;
+            width: 90px;
+            float: right;
+            margin-left: 220px;
+            margin-top: 30px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1;
+        }
+    }
+    /*my projects*/
+    
+    .project-description {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 20px;
+        color: whitesmoke;
+    }
+    
+    .hsu {
+        background-color: #59323C;
+        border: 4px solid white;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .to-do {
+            background-color: #260126;
+            border: 4px solid white;
+            height: 350px;
+        }
+    }
+    
+    .to-do {
+        background-color: #260126;
+        border: 4px solid white;
+    }
+    
+    .profile {
+        background-color: #BFAF80;
+        border: 4px solid white;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .namebadge {
+            background-color: #8C6954;
+            border: 4px solid white;
+            height: 400px;
+        }
+    }
+    
+    .angular-project {
+        background-color: #8C6954;
+        border: 4px solid white;
+    }
+    
+    .namebadge {
+        background-color: #260126;
+        border: 4px solid white;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .namebadge {
+            background-color: #260126;
+            border: 4px solid white;
+            margin-left: 293px;
+            margin-top: -190px;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .movie {
+            background-color: #53A7B3;
+            border: 4px solid white;
+            margin-top: -120px;
+            margin-left: 10px;
+        }
+    }
+    
+    .movie {
+        background-color: #53A7B3;
+        border: 4px solid white;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .brony {
+            background-color: #8C6954;
+            border: 4px solid white;
+            margin-top: -50px;
+            margin-left: -3px;
+        }
+    }
+    
+    .brony {
+        background-color: #8C6954;
+        border: 4px solid white;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .poke-profile {
+            background-color: #59323C;
+            border: 4px solid white;
+            margin-top: -120px;
+        }
+    }
+    
+    .poke-profile {
+        background-color: #59323C;
+        border: 4px solid white;
+    }
+    
+    .progress {
+        font-family: 'Shadows Into Light', cursive;
+        background-color: #8C6954;
+        color: whitesmoke;
+        font-size: 20px;
+        height: 35px;
+    }
+    /*education page*/
+    
+    .education-header {
+        background-image: url(Templates/Pictures/flower2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 325px;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 3px 3px black;
+    }
+    
+    .education {
+        margin-top: 100px;
+        border: 1px solid black;
+    }
+    
+    .education-info {
+        margin-top: 5px;
+    }
+    
+    p {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 20px;
+    }
+    /*contact page*/
+    
+    .contact-header {
+        background-image: url(Templates/Pictures/flower2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 325px;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 3px 3px black;
+    }
+    
+    .contact {
+        font-family: 'Oswald', sans-serif;
+        color: darkslateblue;
+        font-size: 70px;
+        margin-top: 40px;
+        text-shadow: 1px 1px black;
+    }
+    
+    .contact-image {
+        margin-top: 40px;
+        height: 300px;
+        width: auto;
+        float: right;
+    }
+    
+    .phone-num {
+        font-family: 'Oswald', sans-serif;
+        color: dimgray;
+        font-size: 25px;
+        margin-left: 16px;
+        margin-top: 10px;
+    }
+    
+    .email {
+        font-family: 'Oswald', sans-serif;
+        color: dimgray;
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    
+    .contact-social {
+        margin-left: 15px;
+        font-size: 30px;
+    }
+    
+    .contact-icon {
+        height: 50px;
+        width: 50px;
+        margin-top: 10px;
+        align-content: center;
+    }
