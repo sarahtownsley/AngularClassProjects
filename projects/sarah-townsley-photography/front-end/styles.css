@@ -260,6 +260,12 @@
                 background-color: white;
                 opacity: .50;
             }
+            
+            .btn-danger {
+                font-size: 30px;
+                width: auto;
+                height: auto;
+            }
             /*pricing section*/
             
             #pricing {
@@ -347,11 +353,27 @@
             
             button {
                 width: 170px;
-                height: 30px;
+                height: 35px;
                 color: #000;
+                font-size: 20px;
                 background-color: #FFB6A5;
                 opacity: .90;
                 margin-bottom: 10px;
+                font-family: 'Amatic SC', cursive;
+            }
+            
+            button:focus {
+                width: 170px;
+                height: 35px;
+                color: #000;
+                font-size: 20px;
+                background-color: lightgreen;
+                opacity: .90;
+                margin-bottom: 10px;
+                font-family: 'Amatic SC', cursive;
+                -webkit-transition-delay: 2s;
+                /* Safari */
+                transition-delay: 2s;
             }
             
             .contact-social {
