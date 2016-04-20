@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Little Brony</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700|Fontdiner+Swanky|Slackey|Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-controller="MainController">
+    <header class="main-header post-head " style="background-image: url(http://twitrheaders.com/wp-content/uploads/2014/05/My-Little-Pony-Friendship-is-Magic.jpg)">
+        <h1 class="header">BRONYVILLE</h1>
+    </header>
+
+    <p class="text-center description">Welcome to BronyVille! Take a look around and submit your favorite ponies and videos!</p>
+    <!--    scrollbox-->
+    <div class="container-fluid">
+        <div class="row pre-populated scrollbox">
+            <ul class="table col-xs-12">
+                <li ng-repeat="pony in prePonies">
+                    <img ng-src="{{pony.imgUrl}}">
+                    <p class="pony">{{pony.ponyName}}</p>
+                </li>
+            </ul>
+        </div>
+
+        <!--        Submit a favorite pony-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="submit-favorite">Submit a favorite pony: </h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Pony Name: </label>
+                        <input type="text" class="form-control" ng-model="newPony.ponyName" placeholder="Name of Pony">
+
+                        <label>Pony Image: </label>
+                        <input type="text" class="form-control" ng-model="newPony.ponyImage" placeholder="Image URL">
+
+                        <label>Username: </label>
+                        <input type="text" class="form-control" ng-model="newPony.ponyUsername" placeholder="Username">
+
+                        <div class="panel-footer">
+                            <button class="center-block" ng-click="submit(newPony)">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2 class="display-fav">Favorite Pony Pics</h2>
+                <hr>
+                <ul>
+                    <li class="fav-item" ng-repeat="pony in ponyArray">
+                        <img class="fav-pony-pic" ng-src="{{pony.ponyImage}}" />
+                        <div class="fav-description">
+                            <p class="pony-name">{{pony.ponyName}}</p>
+                            <p class="username">Posted by: {{pony.ponyUsername}}</p>
+                            <p>
+                                <button ng-click="delete($index)">Delete</button>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--    submit a favorite pony flick-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="submit-flick">Submit a favorite pony flick:</h3>
+                    </div>
+                    <div class="panel-body">
+                        <label>Flick Title: </label>
+                        <input type="text" class="form-control" ng-model="userFlick.title" placeholder="Title">
+
+                        <label>Flick URL: </label>
+                        <input type="text" class="form-control" ng-model="userFlick.video" placeholder="YouTube video URL">
+
+                        <label>Username: </label>
+                        <input type="text" class="form-control" ng-model="userFlick.userName" placeholder="Username">
+
+                        <div class="panel-footer">
+                            <button class="center-block" ng-click="submitFavFlick()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2 class="display-flick">Favorite Pony Flicks</h2>
+                <hr>
+                <ul>
+                    <li ng-repeat="flick in favFlicks">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="youtube-player embed-responsive-item video" type="text/html" ng-src="{{trustSrc(flick.videoURL)}}" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fav-description">
+                            <p class="pony">{{flick.title}}</p>
+                            <p class="username">Posted by: {{flick.userName}}</p>
+                            <p>
+                                <button ng-click="deleteFavFlick($index)">Delete</button>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="modelmanager.js"></script>
+    <script src="modelservice.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="enscroll-0.6.1.min.js"></script>
+</body>
+
+</html>

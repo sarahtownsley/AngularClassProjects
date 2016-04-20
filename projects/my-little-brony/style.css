@@ -1,0 +1,154 @@
+.main-header {
+    height: 310px;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    border-bottom: 3px solid #FF66CC;
+}
+
+.header {
+    font-size: 50px;
+    font-family: "Fontdiner Swanky", cursive;
+    color: white;
+    margin-top: 300px;
+    text-shadow: 2px 2px #FF66CC;
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        font-family: "Fontdiner Swanky", cursive;
+        color: white;
+        font-size: 100px;
+        margin-top: 300px;
+        text-shadow: 2px 2px #FF66CC;
+    }
+}
+.description {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    border-bottom: 1px solid rebeccapurple;
+}
+
+.username {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+
+/*scrollbox*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pony {
+    font-family: "Fontdiner Swanky", cursive;
+    color: #FF66CC;
+}
+
+.pre-populated li {
+    width: 200px;
+    display: table-cell;
+    text-align: center;
+}
+
+.pre-populated img {
+    height: 120px;
+}
+
+.scrollbox {
+    width: 100%;
+    height: 170px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.horizontal-track2 {
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+}
+
+.horizontal-handle2 {
+    height: 10px;
+    background-color: #B42BFF;
+}
+
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    /* Without margin and padding set to 0 there's excess vertical whitespace*/
+    padding: 0;
+}
+
+
+/*Submit favorite pony panel*/
+
+.panel-default {
+    margin-top: 10px;
+    border: 1px solid #B42BFF;
+}
+
+.submit-favorite {
+    font-family: "Fontdiner Swanky", cursive;
+    color: #B42BFF;
+    font-size: 20px;
+}
+
+label {
+    font-family: "Fontdiner Swanky", cursive;
+}
+
+
+/*Display favorite Pony Pics*/
+
+.display-fav {
+    font-family: "Fontdiner Swanky", cursive;
+    color: #B42BFF;
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+
+.pony-name {
+    font-family: "Fontdiner Swanky", cursive;
+    color: #CD5FFF;
+    font-size: 15px;
+    text-shadow: 1px 1px black;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.fav-item {
+    float: left;
+    margin-right: 10px;
+}
+
+.fav-pony-pic {
+    height: 180px;
+    width: auto;
+    border: 1px solid black;
+}
+
+
+/*Submit favorite pony flick panel*/
+
+.submit-flick {
+    font-family: "Fontdiner Swanky", cursive;
+    color: #3571FF;
+    font-size: 20px;
+}
+
+.display-flick {
+    font-family: "Fontdiner Swanky", cursive;
+    color: #3571FF;
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
